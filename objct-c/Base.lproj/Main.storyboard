@@ -17,19 +17,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3X-uT-ixS">
-                                <rect key="frame" x="110" y="182" width="136" height="104"/>
+                                <rect key="frame" x="60" y="99" width="273" height="187"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAs-Sp-D0t">
+                                <rect key="frame" x="149" y="376" width="95" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Press me"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQm-kk-Yro">
+                                <rect key="frame" x="149" y="376" width="95" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Press me"/>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mpb-5N-sk0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="f3X-uT-ixS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="8un-H2-IgX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f3X-uT-ixS" secondAttribute="bottom" constant="532" id="91s-O7-bOf"/>
-                            <constraint firstItem="f3X-uT-ixS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="123" id="VNM-4Y-cYy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f3X-uT-ixS" secondAttribute="trailing" constant="147" id="mFj-OE-T4V"/>
-                            <constraint firstItem="f3X-uT-ixS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="110" id="x56-AL-KK4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f3X-uT-ixS" secondAttribute="trailing" constant="60" id="RBG-Lc-VTN"/>
+                            <constraint firstItem="f3X-uT-ixS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="SWm-rW-0kK"/>
                         </constraints>
                     </view>
                     <connections>

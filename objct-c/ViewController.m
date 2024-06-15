@@ -10,6 +10,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *label;
+- (IBAction)button:(UIButton *)sender;
 
 @end
 
@@ -22,4 +23,13 @@
 }
 
 
+- (IBAction)button:(UIButton *)sender {
+    if (self.view.backgroundColor == UIColor.blueColor) {
+        self.view.backgroundColor = UIColor.systemGreenColor;
+    } else if (self.view.backgroundColor == UIColor.systemGreenColor) {
+        self.view.backgroundColor = UIColor.redColor;
+    } else {
+        self.view.backgroundColor = UIColor.blueColor;
+    }
+}
 @end
